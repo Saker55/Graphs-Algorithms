@@ -35,6 +35,7 @@ public class BenchmarkRunner {
         {
             System.out.println("Benchmarking DAG...");
             Graph g = input.GenerateDAG();
+            runSSSPSingleBenchmark("results/ssspDAG1.csv", "DAG", g, source);
             runSSSPDAGBenchmark("results/SSSPDAG.csv", g, source);
         }
 
